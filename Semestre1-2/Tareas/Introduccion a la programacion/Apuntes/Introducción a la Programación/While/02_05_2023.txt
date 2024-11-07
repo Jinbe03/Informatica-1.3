@@ -1,0 +1,77 @@
+IF-ELSE
+
+Estructura de ontrol "if-else" (si - de lo contrario)
+                                               (si - sino                  )
+
+Este tipo de instrucción ("if-else")  se utiliza para realizar una pregunta
+de un programa que tenga dos alternativas, como el simbolo rombo de un 
+DFD  <>.
+
+Esta instrucción lo primero que evalua es la opción verdadera, si esta no 
+se cumple  recien pasa a evaluar la opción falsa.
+
+La opcion verdadera es la del "if" y la opcion falsa debajo del "else".
+....................................................................................................................................
+Syntaxis:
+if     ("pregunta o condicion"):     
+(v)        ...
+            ...
+else:
+(f)        ...
+            ...
+            ...        
+            ...
+....................................................................................................................................
+Ejemplo1:
+
+if (edad >=21):
+   contMA = contMA + 1
+Else
+   contME = contME +1
+....................................................................................................................................
+Ejemplo2:
+
+if(total>=100000)
+      contUMA = contUMA +1
+      dcto = (total*10)/100)
+      Mostrar datos.
+else
+      contME = contME +1
+      imp. "no tiene dcto".
+....................................................................................................................................
+Ejemplo3:
+
+if (Carrera == "Informatica"):
+      contAI = contAI+1;
+
+if(Jornada== "Mañ"):
+   contJM = contJM+1 
+
+if(Jornada=="Tar"):
+   contJT = contJT+1
+
+if(Jornada=="Noc"):
+   contJN = contJN+1
+
+else
+       ((todo lo que no sea la carrera Informatica))
+
+
+....................................................................................................................................
+Ejemplo4?
+
+if(supermercado == "Jumbo")
+-
+else
+       ñao jumbo
+
+if(marca=="chevrolet"):
+-
+else
+       ñao chevy
+      
+  
+
+
+ 
+

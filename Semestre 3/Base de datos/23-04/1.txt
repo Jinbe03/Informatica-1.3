@@ -1,0 +1,148 @@
+db.alumnos.insert({
+    rut:"12345678-k",
+    nombre:"Rodrigo",
+    apellido:"Opazo",
+    telefono:"56999111",
+    direccion:"Alfa 1234",
+    comuna:"La Florida"
+})
+
+db.alumnos.find({communa:"La Florida"})
+
+db.Departamentos.insert({
+    DEPTNO:"10",
+    DNAME:"ACCOUNTING",
+    LOC:"NEW YORK"
+})
+
+db.Departamentos.insert({
+    DEPTNO:"20",
+    DNAME:"RESEARCH",
+    LOC:"DALLAS"
+})
+
+db.Departamentos.insert({
+    DEPTNO:"30",
+    DNAME:"SALES",
+    LOC:"CHICAGO"
+})
+
+db.Departamentos.insert({
+    DEPTNO:"40",
+    DNAME:"OPERATIONS",
+    LOC:"BOSTON"
+})
+-------------------------------------------------------------------------------------------
+db.Empleados.insert({
+    EMPNO:"7839",
+    ENAME:"KING",
+    JOB:"PRESIDENT",
+    MGR:"-",
+    HIREDATE:"11/17/1981",
+    SAL:"5000",
+    COMM:"-",
+    DEPTNO:"10"
+})
+
+db.Empleados.insert({
+    EMPNO:"7698",
+    ENAME:"BLAKE",
+    JOB:"MANAGER",
+    MGR:"7839",
+    HIREDATE:"05/01/1981",
+    SAL:"2850",
+    COMM:"-",
+    DEPTNO:"30"
+})
+
+db.Empleados.insert({
+    EMPNO:"7782",
+    ENAME:"CLARK",
+    JOB:"MANAGER",
+    MGR:"7839",
+    HIREDATE:"06/09/1981",
+    SAL:"2450",
+    COMM:"-",
+    DEPTNO:"10"
+})
+
+db.Empleados.insert({
+    EMPNO:"7566",
+    ENAME:"JONES",
+    JOB:"MANAGER",
+    MGR:"7839",
+    HIREDATE:"04/02/1981",
+    SAL:"2975",
+    COMM:"-",
+    DEPTNO:"20"
+})
+
+db.Empleados.insert({
+    EMPNO:"7788",
+    ENAME:"SCOTT",
+    JOB:"ANALYST",
+    MGR:"7566",
+    HIREDATE:"12/09/1982",
+    SAL:"3000",
+    COMM:"-",
+    DEPTNO:"20"
+})
+
+db.Empleados.insert({
+    EMPNO:"7902",
+    ENAME:"FORD",
+    JOB:"ANALYST",
+    MGR:"7566",
+    HIREDATE:"12/03/1981",
+    SAL:"3000",
+    COMM:"-",
+    DEPTNO:"20"
+})
+
+db.Empleados.insert({
+    EMPNO:"7369",
+    ENAME:"SMITH",
+    JOB:"CLERK",
+    MGR:"7902",
+    HIREDATE:"12/17/1980",
+    SAL:"800",
+    COMM:"-",
+    DEPTNO:"20"
+})
+
+db.Empleados.insert({
+    EMPNO:"7499",
+    ENAME:"ALLEN",
+    JOB:"SALESMAN",
+    MGR:"7698",
+    HIREDATE:"02/20/1981",
+    SAL:"1600",
+    COMM:"300",
+    DEPTNO:"30"
+})
+
+db.Empleados.insert({
+    EMPNO:"7521",
+    ENAME:"WARD",
+    JOB:"SALESMAN",
+    MGR:"7698",
+    HIREDATE:"02/22/1981",
+    SAL:"1250",
+    COMM:"500",
+    DEPTNO:"30"
+})
+
+db.Empleados.insert({
+    EMPNO:"7654",
+    ENAME:"MARTIN",
+    JOB:"SALESMAN",
+    MGR:"7698",
+    HIREDATE:"09/28/1981",
+    SAL:"1400",
+    COMM:"400",
+    DEPTNO:"30"
+})
+
+
+
+

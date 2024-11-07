@@ -1,0 +1,52 @@
+Variable Contador
+
+Este tipo de variable se utiliza para contar los procesos o ejecuciones que 
+realize un programa. Generalmente los contadores se incrementan o aumentan
+de 1 en 1.
+
+En algunos casos los contadores pueden ir aumentando de 2 en 2, de 3 en 3,
+etc... Eso lo determina los requerimentos del programa o las necesidades
+del cliente
+
+Nota: Tambien existen los contadores que permiten realizar los procesos de 
+mayor a menor los cuales son un poco mas seguros.
+
+La instrucción IF(Si) se utuliza para usar una pregunta en un programa, por
+lo tanto si el usuario desea realizar 3 preguntas, debe crear 3 instrucciones
+IF(Si), una con cada pregunta en el programa.
+
+La instrucción IF solo evalua y se ejecuta cuando la pregunta a realizar
+se cumple, si la pregunta a realizar no se comple, la instrucción IF no se
+ejecuta y no hace nada.
+
+..........................................................................................................................................................
+Syntaxis:
+                 IF( pregunta ):
+                     (       o       )
+                     (condición )
+                             V
+
+Especificar el parentesis redondo "()"
+..........................................................................................................................................................
+Ejemplo1:
+
+IF(edad>=21):
+contP = contP+1;       #P equivale a Persona
+... Ing Nombre          #Ing equivale a Ingresar
+... Ing Asignatura
+... Ing Promedio
+..........................................................................................................................................................
+Ejemplo2:
+
+IF(p>=10 and p<40);
+contR=contR+1;
+"Ripley";
+
+IF(p>=40 and p<50);
+contA=ContA+1;
+"Aprobado";
+
+IF(p>=50 and p<70);
+contE=contE+1;
+"Eximido";
+..........................................................................................................................................................

@@ -1,0 +1,39 @@
+Ciclo repetitivo While (mientras)
+
+esta instrucción permite repetir una cantidad determinada las ejecuciones
+de un programa, es decir es una instrucción repetitiva donde el usuario debe
+especificar cuantas veces desea que se ejecute un programa.
+
+El ciclo While (mientras), evalua la condicion verdadera del while, es decir,
+si la condicion se cumple entra al ciclo while y se ejecuta todo lo que hay
+en su interior.
+
+Syntaxis.
+
+while(""condicion""):
+	______
+	______
+	______
+	______
+______________
+______________
+______________
+
+.......................................................................................................................................
+
+
+Ej1:
+cont = 0
+while(cont <= 5)
+print("el valor del contador es: ", cont);
+cont = cont + 1
+
+Ej2:
+Cont = 0
+while(Cont<=10);
+print("el valor cont es: ", Cont);
+Cont = Cont + 2
+
+
+
+

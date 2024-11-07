@@ -1,0 +1,108 @@
+// Usuario var (el tipo se infiere)
+var nombre = 'Juan';
+
+// Especificando el tipo
+String apellido = 'Peréz';
+
+// Variables finales (no se pueden cambiar después de asignarles un valor)
+final int edad = 30;
+
+// Variables constantes (valor fijo en tiempo de compilación)
+const double pi = 3.14159;
+
+int a = 5;
+int b = 3;
+
+// Operadores aritméticos
+int suma = a + b; // 8
+int resta = a - b; // 2
+int multiplicacion = a * b; // 15
+double vision = a / b; // 1.6667
+int modulo = a % b; // 2
+
+// Operadores de asignación
+a += 2; // a = a + 2 -> 7
+b *= 3; // b = b * 3 -> 9
+
+// Operadores lógicos
+bool esMayor = a > b; // false
+bool esIgual = a == b; // false
+
+int numero = 10;
+if (numero > 0) {
+  print('El número es positivo');
+} else if (numero < 0) {
+  print('El número es negativo');
+} else {
+  print('El número es cero');
+}
+
+String color = 'rojo';
+
+switch (color) {
+  case 'rojo':
+    print('El color es rojo');
+    break;
+  case 'verde':
+    print('El color es verde');
+    break;
+  default:
+    print('Color Desconocido');
+}
+
+for (int i = 0; i < 5; i++) {
+  print('Iteración $i');
+}
+
+int contador = 0;
+
+while (contador < 5) {
+  print('Contador: $contador');
+  contador++;
+}
+
+contador = 0;
+do {
+  print('Contador: $contador');
+  contador++;
+} while (contador < 5);
+
+// Función sin retorno
+void saludar() {
+  print('Hola');
+}
+
+// Función con retorno
+int sumar(int a, int b) {
+  return a + b;
+}
+
+// Llamar funciones
+saludar();
+int resultado = sumar(3, 4);
+print('Resultado: $resultado');
+
+// Función con parámetros opcionales y valores por defecto
+String crearMensaje(String nombre, [String saludo = 'Hola']) {
+  return '$saludo, $nombre';
+}
+
+String mensaje = crearMensaje('Juan');
+print(mensaje); // Hola, Juan
+
+List<int> numeros = [1, 2, 3, 4, 5];
+
+numeros.add(6);
+print(numeros); // [1, 2, 3, 4, 5, 6]
+
+Set<String> frutas = {'manzana', 'banana', 'naranja'};
+frutas.add('pera');
+print(frutas); // {manzana, banana, naranja, pera}
+
+Map<String, int> edades = {
+  'Juan': 30,
+  'Ana': 25,
+  'Pedro': 40
+};
+edades['Maria'] = 35;
+print(edades); // {Juan: 30, Ana: 25, Pedro: 40, Maria: 35}

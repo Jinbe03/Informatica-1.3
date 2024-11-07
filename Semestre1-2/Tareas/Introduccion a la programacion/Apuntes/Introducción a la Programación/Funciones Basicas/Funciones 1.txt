@@ -1,0 +1,9 @@
+#Ejemplo 1 de Funciones
+#Ejemplo de funcion basicas y simples o sin retorno o sin parametros
+
+#Realice un programa menu en python validando el menu en ciclo while a
+
+
+#limpiar pantalla
+from os import system
+system("cls")

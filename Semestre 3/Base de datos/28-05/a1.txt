@@ -1,0 +1,295 @@
+
+use tienda
+db.createCollection("Personas")
+db.personas.insertOne({
+    "_id": 1,
+    "nombre": "Rodrigo",
+    "edad": 40,
+    "direccion": {
+        "ciudad": "Santiago",
+        "calle": "Beta",
+        "nro": 1122,
+        "comuna": "San Miguel"
+    },
+    "empleo": {
+        "cargo": "DBA",
+        "salario": 2500000,
+        "fecha_contratacion": new Date(2020, 10, 5)
+    },
+    "proyectos": [{
+        "nombre": "Proyecto A",
+        "duracion": 5
+    }, {
+        "nombre": "Proyecto B",
+        "duracion": 9
+    }]
+})
+
+db.personas.find({"direccion.ciudad":"Santiago"})
+db.personas.find({"empleo.cargo":"DBA"})
+db.personas.find({"proyectos.nombre":"Proyecto A"})
+db.personas.find({"empleo.fecha_contratacion": {$gt: new Date(2020, 0, 1)}})
+
+db.personas.insertMany([
+    {
+        "_id": 1,
+        "nombre": "Ana Pérez",
+        "edad": 30,
+        "direccion": {
+            "ciudad": "Barcelona",
+            "calle": "Calle Mayor",
+            "numero": 10
+        },
+        "empleo": {
+            "posicion": "Desarrollador",
+            "salario": 3000,
+            "fecha_contratacion": new Date("2022-01-15")
+        },
+        "proyectos": [
+        {
+            "nombre": "Proyecto A",
+            "duracion": 6
+        },
+        {
+            "nombre": "Proyecto B",
+            "duracion": 12
+        }
+        ]
+    },
+    {
+        "_id": 2,
+        "nombre": "Juan Gómez",
+        "edad": 40,
+        "direccion": {
+            "ciudad": "Madrid",
+            "calle": "Calle Nueva",
+            "numero": 45
+        },
+        "empleo": {
+            "posicion": "Gerente",
+            "salario": 5000,
+            "fecha_contratacion": new Date("2020-05-20")
+        },
+        "proyectos": [
+        {
+            "nombre": "Proyecto C",
+            "duracion": 8
+        }
+        ]
+    },
+    {
+        "_id": 3,
+        "nombre": "Maria López",
+        "edad": 25,
+        "direccion": {
+            "ciudad": "Valencia",
+            "calle": "Avenida Central",
+            "numero": 100
+        },
+        "empleo": {
+            "posicion": "Tester",
+            "salario": 2000,
+            "fecha_contratacion": new Date("2021-03-10")
+        },
+        "proyectos": [
+        {
+            "nombre": "Proyecto D",
+            "duracion": 4
+        }
+        ]
+    },
+    {
+        "_id": 4,
+        "nombre": "Pedro Sánchez",
+        "edad": 35,
+        "direccion": {
+        "ciudad": "Barcelona",
+        "calle": "Calle Secundaria",
+        "numero": 20
+        },
+        "empleo": {
+            "posicion": "Analista",
+            "salario": 3500,
+            "fecha_contratacion": new Date("2019-07-25")
+        },
+        "proyectos": [
+        {
+            "nombre": "Proyecto E",
+            "duracion": 9
+        },
+        {
+            "nombre": "Proyecto F",
+            "duracion": 6
+        }
+        ]
+    },
+    {
+        "_id": 5,
+        "nombre": "Lucia Torres",
+        "edad": 28,
+        "direccion": {
+            "ciudad": "Madrid",
+            "calle": "Calle Peatonal",
+            "numero": 5
+        },
+        "empleo": {
+            "posicion": "Desarrollador",
+            "salario": 3200,
+            "fecha_contratacion": new Date("2023-01-10")
+        },
+        "proyectos": [
+        {
+            "nombre": "Proyecto G",
+            "duracion": 5
+        }
+        ]
+    },
+    {
+        "_id": 6,
+        "nombre": "Carlos Ruiz",
+        "edad": 50,
+        "direccion": {
+            "ciudad": "Sevilla",
+            "calle": "Calle Larga",
+            "numero": 85
+        },
+        "empleo": {
+            "posicion": "Director",
+            "salario": 7000,
+            "fecha_contratacion": new Date("2018-09-01")
+        },
+        "proyectos": [
+        {
+            "nombre": "Proyecto H",
+            "duracion": 15
+        }
+        ]
+    },
+    {
+        "_id": 7,
+        "nombre": "Sara Blanco",
+        "edad": 32,
+        "direccion": {
+            "ciudad": "Bilbao",
+            "calle": "Calle Verde",
+            "numero": 33
+        },
+        "empleo": {
+            "posicion": "Tester",
+            "salario": 2500,
+            "fecha_contratacion": new Date("2021-11-15")
+        },
+        "proyectos": [
+        {
+            "nombre": "Proyecto I",
+            "duracion": 3
+        },
+        {
+            "nombre": "Proyecto J",
+            "duracion": 8
+        }
+        ]
+    },
+    {
+        "_id": 8,
+        "nombre": "David Fernández",
+        "edad": 45,
+        "direccion": {
+            "ciudad": "Valencia",
+            "calle": "Calle Azul",
+            "numero": 52
+        },
+        "empleo": {
+            "posicion": "Desarrollador",
+            "salario": 4200,
+            "fecha_contratacion": new Date("2017-06-30")
+        },
+        "proyectos": [
+        {
+            "nombre": "Proyecto K",
+            "duracion": 12
+        }
+        ]
+    },
+    {
+        "_id": 9,
+        "nombre": "Laura Martínez",
+        "edad": 38,
+        "direccion": {
+            "ciudad": "Madrid",
+            "calle": "Calle Roja",
+            "numero": 18
+        },
+        "empleo": {
+            "posicion": "Gerente",
+            "salario": 4800,
+            "fecha_contratacion": new Date("2019-04-20")
+        },
+        "proyectos": [
+        {
+            "nombre": "Proyecto L",
+            "duracion": 10
+        },
+        {
+            "nombre": "Proyecto M",
+            "duracion": 7
+        }
+    ]
+    },
+    {
+        "_id": 10,
+        "nombre": "Marta Morales",
+        "edad": 29,
+        "direccion": {
+            "ciudad": "Barcelona",
+            "calle": "Calle Amarilla",
+            "numero": 72
+        },
+        "empleo": {
+            "posicion": "Analista",
+            "salario": 3400,
+            "fecha_contratacion": new Date("2020-12-05")
+        },
+        "proyectos": [
+        {
+            "nombre": "Proyecto N",
+            "duracion": 6
+        },
+        {
+            "nombre": "Proyecto O",
+            "duracion": 4
+        }
+        ]
+    }
+]);
+
+db.personas.find({"direccion.ciudad": "Madrid"})
+db.personas.find({"empleo.salario": {$gte: 4000}})
+db.personas.find({"edad": {$gt: 35}})
+db.personas.find({"nombre": /Ana/})
+db.personas.find({"nombre": /^A/})
+db.personas.find({"empleo.salario": {$gte: 2500, $lte: 3500}})
+db.personas.find({"empleo.cargo": {$in: ["Gerente", "Desarrollador"]}})
+db.personas.find({"empleo.cargo": {$ne: "Tester"}})
+db.personas.find({"proyectos": {$elemMatch: {"duracion": {$gt: 6}}}})
+db.personas.find({"proyectos": {$size: 2}})
+db.personas.find({"direccion.nro": {$lt: 20}})
+db.personas.find({"empleo.fecha_contratacion": {$gt: new Date(2021, 0, 1)}})
+db.personas.find({"nombre": /Juan/, "direccion.ciudad": "Barcelona"})
+db.personas.find({$or: [{"nombre": /Juan/}, {"empleo.salario": {$gt: 5000}}]})
+db.personas.find({"proyectos.nombre": /Proyecto/})
+db.personas.find({"direccion.ciudad": {$ne: "Valencia"}})
+db.personas.find({"edad": {$lte: 40}})
+db.personas.find({"direccion.ciudad": "Madrid", "empleo.salario": {$gt: 3500}})
+db.personas.find({"direccion.nro": {$gte: 1, $lte: 50}})
+db.personas.find({"empleo.cargo": {$ne: "Desarrollador"}})
+db.personas.find({"proyectos": {$elemMatch: {"duracion": {$lt: 6}}}})
+db.personas.find({"nombre": /ez$/})
+db.personas.find({"empleo.fecha_contratacion": {$lt: new Date(2023, 0, 1)}})
+db.personas.find({$or: [{"direccion.ciudad": "Barcelona"}, {"empleo.salario": {$lt: 3000}}]})
+db.personas.find({"nombre": "Pedro", "empleo.salario": {$gte: 4500}})
+db.personas.find({"nombre": {$not: /Maria/}})
+db.personas.find({"edad": 25})
+db.personas.find({"direccion.ciudad": /^B/})
+db.personas.find({"direccion.nro": {$gt: 50}})
+db.personas.find({"empleo.salario": {$not: {$gte: 2000, $lte: 4000}}})

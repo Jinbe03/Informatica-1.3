@@ -1,0 +1,35 @@
+Realize un prgorama que calcule venta de productos (solo 3 ventas)
+
+cont        = 1
+producto = ""
+precio     = 0
+cantidad = 0
+
+while(cont<=3)
+	producto=int("ingrese producto")
+	precio    =int(input("ingrese precio")
+	cantidad=int(input("ingrese cantidad")
+ 
+1.-Realize un prgorama utilizando ciclo while que entregue los siguientes datos:
+-Los numeros del 1 al 50 de 5 en 5
+-Muestre la cantidad de procesos realizados
+
+2.- Realize un programa con ciclo while que entregue los siguientes datos:
+-del 100 al 0 
+-muestre los procesos realizados
+-muestre la suma acumulada del total de procesos acumulados
+
+3.- realiza un programa con ciclo while que entregue los siguientes datos:
+-Imprima los numeros del 70 al 45 de 1 en 1
+-muestre los procesos realizados, muestre el total de procesos realizados
+-muestre el total de los procesos acumulados
+
+4.-"
+-el programa es para 3 personas
+-debe ingresar y mostrar los datos de cada persona
+-en el titulo debe mostrar el numero de persona que es 
+
+-rut
+-nombre
+-valor 1, valor 2 y resultado
+-la operacion a realizar es una suma

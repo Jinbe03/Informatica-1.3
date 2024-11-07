@@ -1,0 +1,4 @@
+Hacer un diagrama bpmn y un mockup de una pagina web que se le debe
+vender a una empresa/persona en especifico cumpliendo los requistios
+que pida la misma.
+BPMN va en el 3.2

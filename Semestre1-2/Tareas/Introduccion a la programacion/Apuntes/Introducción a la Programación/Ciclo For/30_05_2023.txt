@@ -1,0 +1,45 @@
+Ciclo repetitivo for 
+
+Este ciclo se utiliza para repetir procesos o ejecucion de un programa al igual que
+ciclo while
+
+Syntaxis:
+
+for (Variable y condicion):
+	___________
+	___________
+	___________
+	___________
+___________________
+___________________
+___________________
+___________________
+
+
+Ej1:
+For (i in range (1, 6, 1)):   	 # 1-Valor de inicio
+	ing.Nombre    	 # 6-Numero de procesos a repetir
+	ing.Direccion	 # 1-Incremento del ciclo for
+	ing.Fono
+_________________
+_________________
+_________________
+_________________
+((^Fuera del ciclo for^))
+
+Ej2:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

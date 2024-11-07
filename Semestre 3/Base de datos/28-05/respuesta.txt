@@ -1,0 +1,89 @@
+// 1. Buscar empleados que viven en "Madrid":
+db.personas.find({"direccion.ciudad": "Madrid"})
+
+// 2. Buscar empleados con salario mayor o igual a 4000:
+db.personas.find({"empleo.salario": {$gte: 4000}})
+
+// 3. Buscar empleados que tienen más de 35 años:
+db.personas.find({"edad": {$gt: 35}})
+
+// 4. Buscar empleados cuyo nombre contiene "Ana":
+db.personas.find({"nombre": /Ana/})
+
+// 5. Buscar empleados cuyo nombre empieza con "A":
+db.personas.find({"nombre": /^A/})
+
+// 6. Buscar empleados con un salario entre 2500 y 3500:
+db.personas.find({"empleo.salario": {$gte: 2500, $lte: 3500}})
+
+// 7. Buscar empleados que trabajan como "Gerente" o "Desarrollador":
+db.personas.find({"empleo.cargo": {$in: ["Gerente", "Desarrollador"]}})
+
+// 8. Buscar empleados que no trabajan como "Tester":
+db.personas.find({"empleo.cargo": {$ne: "Tester"}})
+
+// 9. Buscar empleados que tienen un proyecto con duración mayor a 6 meses:
+db.personas.find({"proyectos": {$elemMatch: {"duracion": {$gt: 6}}}})
+
+// 10. Buscar empleados que tienen exactamente 2 proyectos:
+db.personas.find({"proyectos": {$size: 2}})
+
+// 11. Buscar empleados cuyo número de calle es menor que 20:
+db.personas.find({"direccion.nro": {$lt: 20}})
+
+// 12. Buscar empleados contratados después del 1 de enero de 2021:
+db.personas.find({"empleo.fecha_contratacion": {$gt: new Date(2021, 0, 1)}})
+
+// 13. Buscar empleados cuyo nombre contiene "Juan" y viven en "Barcelona":
+db.personas.find({"nombre": /Juan/, "direccion.ciudad": "Barcelona"})
+
+// 14. Buscar empleados cuyo nombre contiene "Juan" o tienen un salario mayor a 5000:
+db.personas.find({$or: [{"nombre": /Juan/}, {"empleo.salario": {$gt: 5000}}]})
+
+// 15. Buscar empleados que tienen al menos un proyecto cuyo nombre contiene "Proyecto":
+db.personas.find({"proyectos.nombre": /Proyecto/})
+
+// 16. Buscar empleados cuya ciudad no es "Valencia":
+db.personas.find({"direccion.ciudad": {$ne: "Valencia"}})
+
+// 17. Buscar empleados con una edad menor o igual a 40:
+db.personas.find({"edad": {$lte: 40}})
+
+// 18. Buscar empleados que viven en "Madrid" y tienen un salario mayor a 3500:
+db.personas.find({"direccion.ciudad": "Madrid", "empleo.salario": {$gt: 3500}})
+
+// 19. Buscar empleados cuyo número de calle es entre 1 y 50:
+db.personas.find({"direccion.nro": {$gte: 1, $lte: 50}})
+
+// 20. Buscar empleados con una posición que no es "Desarrollador":
+db.personas.find({"empleo.cargo": {$ne: "Desarrollador"}})
+
+// 21. Buscar empleados con un proyecto de duración menor a 6 meses:
+db.personas.find({"proyectos": {$elemMatch: {"duracion": {$lt: 6}}}})
+
+// 22. Buscar empleados cuyo nombre termina con "ez":
+db.personas.find({"nombre": /ez$/})
+
+// 23. Buscar empleados contratados antes del 1 de enero de 2023:
+db.personas.find({"empleo.fecha_contratacion": {$lt: new Date(2023, 0, 1)}})
+
+// 24. Buscar empleados que viven en "Barcelona" o tienen un salario menor a 3000:
+db.personas.find({$or: [{"direccion.ciudad": "Barcelona"}, {"empleo.salario": {$lt: 3000}}]})
+
+// 25. Buscar empleados con nombre "Pedro" y un salario mayor o igual a 4500:
+db.personas.find({"nombre": "Pedro", "empleo.salario": {$gte: 4500}})
+
+// 26. Buscar empleados cuyo nombre no contiene "Maria":
+db.personas.find({"nombre": {$not: /Maria/}})
+
+// 27. Buscar empleados con edad igual a 25:
+db.personas.find({"edad": 25})
+
+// 28. Buscar empleados que viven en una ciudad que comienza con "B":
+db.personas.find({"direccion.ciudad": /^B/})
+
+// 29. Buscar empleados cuyo número de calle es mayor a 50:
+db.personas.find({"direccion.nro": {$gt: 50}})
+
+// 30. Buscar empleados con un salario que no está entre 2000 y 4000:
+db.personas.find({"empleo.salario": {$not: {$gte: 2000, $lte: 4000}}})

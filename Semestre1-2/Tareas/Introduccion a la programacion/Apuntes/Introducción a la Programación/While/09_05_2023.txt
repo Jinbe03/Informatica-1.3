@@ -1,0 +1,75 @@
+Estructura de control "ELIF"
+
+Esta instruccion al igual que los dos anteriores se utiliza para realizar una pregunta en un programa que tiene 
+mas de dos respuestas, donde lo primero que evalua es la opcion verdadera del if y luego va evaluando de una
+en una las siguientes alternativas o condiciones de la insturccion.
+
+La cantidad de alternativas que puede tener ELIF depende del usuario o los requerimientos del programa.
+
+Syntaxis
+
+if (condicion o pregunta principal):
+   ________________________________
+   ________________________________
+   ________________________________
+   ________________________________
+
+elif (condicion 2):
+   ________________________________
+   ________________________________
+   ________________________________
+   ________________________________
+
+elif (condicion 3):
+   ________________________________
+   ________________________________
+   ________________________________
+   ________________________________
+
+
+Ej1
+
+if (e>=1  abd e <12):
+    "Niño"
+
+elif(e>=12 and e <18):
+      "Adolecente"
+
+elif(e>=18 and e <21):
+      "Juvenil"
+
+elif(e>=21 and e <65)
+      "Adulto"
+
+else
+       "Adulto Mayor"
+............................................................................................................................................................................
+Ej2
+
+if(color=="Rojo"):
+   "Color Rojo";
+
+elif(color=="Azul"):
+      "Color Azul"
+
+elif (color=="Amarillo"):
+       "Color Amarillo"
+
+elif (color=="Nego"):
+       "Color Negro"
+
+else
+      "No esta el color que anda buscando"
+
+
+
+
+
+
+
+
+
+
+
+
+

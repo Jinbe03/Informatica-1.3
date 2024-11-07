@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="css/estilo.css">
+    <script src="js/validacion.js"></script>
+</head>
+<body>
+    <form name="form1" onsubmit="return valida();" id="form1" action="" method="get">
+        <div>
+            <label for="usuario" class="label">Usuario</label>
+            <input type="text" name="usuario" id="usuario" onblur="validaUsuario()">
+        </div>
+        <div>
+            <label for="clave" class="label">Clave</label>
+            <input type="password" name="clave" id="clave">
+        </div>
+        <div>
+            <label for="nombre" class="label">Nombre</label>
+            <input type="text" name="nombre" id="nombre">
+        </div>
+        <div>
+            <label for="apellido" class="label">Apellido</label>
+            <input type="text" name="apellido" id="apellido">
+        </div>
+        <div>
+            <label for="edad" class="label">Edad</label>
+            <input type="text" name="edad" id="edad">
+        </div>
+        <div>
+            <label for="comuna" class="label">Comuna</label>
+            <select name="comuna" id="comuna">
+                <option>Seleccione</option>
+                <option>Macul</option>
+                <option>Ñuñoa</option>
+            </select>
+        </div>
+        <div>
+            <label class="label">Color</label>
+            <input type="radio" name="color" id="rojo" value="Rojo">
+            <label for="rojo">Rojo</label>
+            <input type="radio" name="color" id="verde" value="Verde">
+            <label for="verde">Verde</label>
+            <input type="radio" name="color" id="azul">
+            <label for="azul">Azul</label>
+        </div>
+        <div>
+            <label class="label">Hobbies</label>
+            <input type="checkbox" name="hobbies" id="leer" value=""Leer>
+            <label for="leer">Leer</label>
+            <input type="checkbox" name="hobbies" id="tv" value="TV">
+            <label for="tv">TV</label>
+            <input type="checkbox" name="hobbies" id="musica" value="Musica">
+            <label for="musica">Música</label>
+        </div>
+        <div class="centro">
+            <input type="submit" value="Enviar" name="btnEnviar" id="btnEnviar">
+            <input type="reset" value="Limpiar" name="btnLimpiar" id="btnLimpiar">
+        </div>
+    </form>
+</body>
+</html>

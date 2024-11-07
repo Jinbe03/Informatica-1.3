@@ -1,0 +1,61 @@
+OPERADORES LOGICOS
+
+$eq             igual               - equal
+$lt             moner que           - lower than
+$lte            menor o igual que   - lower than equal
+$gt             mayor que           - greater than
+$gte            mayor o igual que   - greater than equal
+$ne             distinto            - not equal
+$in             dentro de un grupo  - in
+$nin            fuera del grupo     - not in 
+
+
+db.(nombretabla).drop()             - Borrar tabla
+
+db.persona.insertMany([
+    {
+        rut:"12345678-k",
+        nombre:"Rodrigo",
+        FechaNacimiento: new Date("1973-04-23"),
+        comuna:"La Florida"
+    },
+    {
+        rut:"18202020-5",
+        nombre:"Angelica",
+        FechaNacimiento: new Date("1982-1-30"),
+        comuna:"La Florida"
+    },
+    {
+        rut:"19505666-4",
+        nombre:"Lucas",
+        FechaNacimiento: new Date("2012-10-38"),
+        comuna:"San Miguel"
+    },
+    {
+        rut:"22292929-7",
+        nombre:"Camila",
+        FechaNacimiento: new Date("2017-1-30"),
+        comuna:"La Florida"
+    }
+])
+
+
+db.persona.find({condicion},{proyeccion})
+db.persona.find({comuna:{$eq:"La Florida"}})
+db.persona.find({comuna:{$eq:"La Florida"}, {rut:1, nombre:1}})
+db.persona.find({comuna:{$eq:"La Florida"}, {_id:0, rut:1, nombre:1}})
+
+db.persona.findOne({Comuna:{$eq:"La Florida"}})
+db.persona.updateOne({
+    rut:{$eq:"12345678-k"}},
+    {$set:{nombre:"Rodrigo Opazo", nota1:7, nota2:2}
+})
+
+
+
+db.persona.find({nota1:{$gt:6}})
+
+db.persona.find({nota1:{$gt:5}})
+
+db.persona.updateMany({},{$set:{comida:[]}})
+db.persona.updateMany({nota1:{$lte:4}},{$set:{examen:new Date(2024-04-23)}})

@@ -1,0 +1,53 @@
+{% extends 'core/base.html' %} {% load static %} {% block titlepage %} Contacto
+| Clase 4 {% endblock %} {% block titulo %} CONTACTO {% endblock %} 
+{% block breadcrumb %}
+<li class="breadcrumb-item"><a href="#">Lista Empleados</a></li>
+<li class="breadcrumb-item active">Martes 08-10</li>
+{% endblock %} 
+{% block principal %}
+<table>
+  <thead>
+    <tr>
+      <td>RUT</td>
+      <td>NOMBRE</td>
+      <td>APELLIDO</td>
+      <td>EDAD</td>
+      <td>DIRECCION</td>
+      <td>TELEFONO</td>
+      <td>TIPO</td>
+      <td>OPCIONES</td>
+      <td>NACIMIENTO</td>
+      <td>FOTO</td>
+    </tr>
+  </thead>
+  <tbody>
+    {% for aux in listaEmpleados %}
+    <tr>
+      <td>{{ aux.rut }}</td>
+      <td>{{ aux.nombre }}</td>
+      <td>{{ aux.apellido }}</td>
+      <td>{{ aux.edad }}</td>
+      <td>{{ aux.telefono }}</td>
+      <td>{{ aux.direccion }}</td>
+      <td>{{ aux.tipo }}</td>
+      <td>{{ aux.nacimiento }}</td>
+      <td>
+        {% if aux.foto %}
+        <img src="{{ aux.foto.url }}" alt="" width="100" height="100">
+        {% else %}
+        <img src="{% static 'core/dist/img/avatar.png' %}" alt="" height="100" width="100">
+        {% endif %}
+      </td>
+      <td>
+        <a href="{% url 'updateempleado' aux.id %}" class="btn btn-info"
+          >Modificar</a
+        >
+        <a href="{% url 'deleteempleado' aux.id %}" class="btn btn-danger"
+          >Eliminar</a
+        >
+      </td>
+    </tr>
+    {% endfor %}
+  </tbody>
+</table>
+{% endblock %}

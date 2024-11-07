@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario3</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <form name="frmRemuneraciones" id="frmRemuneraciones" method="get" action="">
+        <h2>FORMULARIO DE REMUNERACIONES</h2>
+        <div>
+            <label class="label" for="rut">RUT</label>
+            <input type="text" name="rut" id="rut">
+        </div>
+        <div>
+            <label class="label"  for="nombre">NOMBRE</label>
+            <input type="text" name="nombre" id="nombre">
+        </div>
+        <div>
+            <label class="label"  for="sueldo">SUELDO BASE</label>
+            <input type="numbre" min="0" name="sueldo" id="sueldo">
+        </div>
+        <div>
+            <label  class="label" >GENERO</label>
+            <input type="radio" name="genero" id="M" value="Masculino">
+            <label for="M">Masculino</label>
+            <input type="radio" name="genero" id="F" value="Femenino">
+            <label for="F">Femenino</label>
+        <div>
+            <label  class="label"  for="cargas">NUMERO DE CARGAS</label>
+            <select name="cargas" id="cargas">
+                <option value=""></option>
+                <option value="0">0</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </select>
+        </div>
+        <div>
+            <label  class="label"  for="afp">AFP</label>
+            <select name="afp" id="afp">
+                <option value=""></option>
+                <option value="0">Habitat</option>
+                <option value="1">PlanVital</option>
+                <option value="2">Cuprum</option>
+            </select>
+        </div>
+        <div>
+            <label  class="label"  for="isapre">ISAPRE</label>
+            <select name="isapre" id="isapre">
+                <option value=""></option>
+                <option value="0">Mas Vida</option>
+                <option value="1">Vida Tres</option>
+                <option value="2">Consalud</option>
+            </select>
+        </div>
+        <div>
+            <label  class="label"  for="bono">BONO</label>
+            <input type="number" min="0" name="bomo" id="bono">
+        </div>
+        <div class="centro">
+            <input type="submit" value="Guardar" name="btnGuardar" id="btnGuardar">
+        </div>
+    </form>
+</body>
+</html>

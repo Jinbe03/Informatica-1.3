@@ -1,0 +1,21 @@
+
+
+create table Sueldos(
+Rut char(12) Constraint PkRutSueldos Primary Key,
+Nombre Varchar(20),
+SBase numeric(38),
+Bono Numeric(38),
+Aguinaldo Numeric(38),
+Afp Numeric(38),
+Anticipo Numeric(38),
+SLiquido Numeric(38)
+);
+
+
+begin
+	insert into Sueldos values ('11.111.111-1', 'JPerez',500000, 50000,20000,20000,50000,470000);
+	insert into Sueldos values ('22.222.222-2', 'ELopez',600000, 50000,20000,20000,30000,570000);
+	insert into Sueldos values ('33.333.333-3', 'JMolina',400000, 50000,20000,20000,20000,370000);
+end;
+
+commit;

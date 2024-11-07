@@ -1,0 +1,34 @@
+Configurar el admin de django:
+***** EXTENSION VSCODE: Database Client *****
+
+1- Cada vez que quieran configurar el admin deben ir al archivo:
+	- admin.py
+
+2- Para revisar las tablas de la base de datos:
+	- models.py
+
+3- Para migrar las tablas creadas primero se crea el script:
+	- python manage.py makemigrations
+
+4- Para migrar hacia la BD:
+	- python manage.py migrate
+
+5- Se debe crear un super user para acceder al admin de django:
+	- python manage.py createsuperuser
+
+6- Para entrar al admin de django, en la URL agregar /admin:
+	- http://127.0.0.1:8000/admin
+
+7- Para arreglar el objeto: se agrega la funcion "str" en models.
+
+8- Para configurar los textos del admin:
+	- urls.py (principal)
+	- apps.py
+
+9- Para mostrar la informacion en formato tabla:
+	- admin.py
+
+
+
+
+

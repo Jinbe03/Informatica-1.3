@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+    <h2>Formulario de Registro</h2>
+    <form id="formulario">
+        <div>
+            <label for="login">Usuario:</label>
+            <input type="text" id="login" name="login" required>
+        </div>
+        <div>
+            <label for="clave">Contraseña:</label>
+            <input type="password" id="clave" name="clave" required>
+        </div>
+        <div>
+            <label for="reclave">Confirmar Contraseña:</label>
+            <input type="password" id="reclave" name="reclave" required>
+        </div>
+        <div>
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+        </div>
+        <div>
+            <label for="direccion">Dirección:</label>
+            <input type="text" id="direccion" name="direccion" required>
+        </div>
+        <div>
+            <label for="edad">Edad:</label>
+            <input type="number" id="edad" name="edad" required>
+        </div>
+        <div>
+            <label for="fono">Teléfono:</label>
+            <input type="tel" id="fono" name="fono">
+        </div>
+        <div>
+            <label for="movil">Móvil:</label>
+            <input type="tel" id="movil" name="movil" required>
+        </div>
+        <div>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+        <div>
+            <label for="comuna">Comuna:</label>
+            <select id="comuna" name="comuna" required>
+                <option value="">Selecciona una comuna</option>
+                <option value="Santiago">Santiago</option>
+                <option value="Providencia">Providencia</option>
+                <option value="Las Condes">Las Condes</option>
+                <option value="Ñuñoa">Ñuñoa</option>
+                <option value="La Reina">La Reina</option>
+            </select>
+        </div>
+        <div>
+            <label for="hobbies">Hobbies:</label>
+            <div class="checkbox-group">
+                <label><input type="checkbox" name="hobbies" value="Leer"> Leer</label>
+                <label><input type="checkbox" name="hobbies" value="Radio"> Radio</label>
+                <label><input type="checkbox" name="hobbies" value="Televisión"> Televisión</label>
+                <label><input type="checkbox" name="hobbies" value="Internet"> Internet</label>
+                <label><input type="checkbox" name="hobbies" value="PlayStation"> PlayStation</label>
+                <label><input type="checkbox" name="hobbies" value="Call of Duty"> Call of Duty</label>
+            </div>
+        </div>
+        <div>
+            <label>Género:</label>
+            <label><input type="radio" name="genero" value="Masculino" required> Masculino</label>
+            <label><input type="radio" name="genero" value="Femenino" required> Femenino</label>
+        </div>
+        <div>
+            <button type="submit">Enviar</button>
+            <button type="reset">Restablecer</button>
+        </div>
+    </form>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+[
+   {
+	"Rut"        : "11.111.111-1",
+	"Nombre"     : "Juan Perez",
+	"Ciudad"     : "Viña",
+	"Fono"       : "2233224"
+   },
+   {
+	"Rut"        : "22.222.222-2",
+	"Nombre"     : "MSoto",
+	"Ciudad"     : "Santiago",
+	"Fono"       : "7733224"
+   },
+   {
+	"Rut"        : "33.333.333-3",
+	"Nombre"     : "RPino",
+	"Ciudad"     : "Valpo",
+	"Fono"       : "883345"
+   },
+   {
+	"Rut"        : "44.444.444-4",
+	"Nombre"     : "Alumnos POO",
+	"Fono"       : "883345",
+    "Mail"       : "APOO@ddd.cl"
+   }
+]

@@ -1,0 +1,30 @@
+      Ejercicios basicos de DFD.
+
+1.- realice un Diagrama de flujo que calcule el proomedio de nota 
+    de los alumnos, el cual debe mostrar si el alumno si esta aprobado, 
+     reprobado o eximido.
+
+a) datos
+
+Reprobado =  Prom >=10 y Prom <  40
+Aprobado  =  Prom >=40 y Prom <  50
+Eximido  =  Prom >=50 y Prom <= 70
+
+
+2.- Realice un Diagrama de flujo que controle el movimiento de una compra
+    de producto para lo cual debe considerar algunos datos si el 
+    total de la compra.
+
+Datos:
+-Si el total de la compra es de 100.000 - 200.000 = se realiza 10% de DCTO.
+-Si el total de la compra esS de 200.001 - 300.000 = se realiza 20% de DCTO.
+
+3.- Realice un diagrama de flujo que permitan controlar la venta de entradas 
+    al CineMark por lo cual deben considerar los sigientes datos.
+
+    NOTA: 
+    Las peliculas que se exiben son de accion, terror, infantil. 
+    En las PELICULAS DE TERROR se hace un 10% de descuento.
+
+
+

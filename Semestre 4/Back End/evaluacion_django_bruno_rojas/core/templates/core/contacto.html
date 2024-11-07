@@ -1,0 +1,42 @@
+{% extends 'core/base.html' %}
+{% load static %}
+{% block principal %}
+      <div class="container-fluid">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title fw-semibold mb-4">Formulario de Contacto</h5>
+            <div class="card">
+              <div class="card-body">
+                <form>
+                  <div class="mb-3">
+                    <label for="exampleInputNombres1" class="form-label">Nombres Contacto</label>
+                    <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="NombreForm">
+                    <div id="emailHelp" class="form-text"></div>
+                  </div>
+                  <div class="mb-3">
+                    <label for="exampleInputApellidos1" class="form-label">Apellidos Contacto</label>
+                    <input type="text" class="form-control" id="ApellidoForm">
+                  </div>
+                  <div class="mb-3">
+                    <label for="exampleInputRut1" class="form-label">Rut Contacto</label>
+                    <input type="text" class="form-control" id="RutForm">
+                  </div>
+                  <div class="mb-3">
+                    <label for="exampleInputDireccion1" class="form-label">Direccion Contacto</label>
+                    <input type="text" class="form-control" id="DirForm">
+                  </div>
+                  <div class="mb-3">
+                    <label for="exampleInputFecha1" class="form-label">Fecha Nacimiento Contacto</label>
+                    <input type="date" class="form-control" id="FechaForm">
+                  </div>
+                  <div class="mb-3 form-check">
+                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                    <label class="form-check-label" for="exampleCheck1">Acepto los terminos y condiciones</label>
+                  </div>
+                  <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+{% endblock %}

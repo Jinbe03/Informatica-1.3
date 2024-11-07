@@ -1,0 +1,49 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin:0;
+}
+
+nav {
+    background-color: black;
+    text-align: center;
+    padding: 20px;
+    border-bottom: 2px solid #1293d4;
+}
+a{
+    color:#1293d4;
+    text-decoration: none;
+}
+footer{
+    background-color: #1293d4;
+    padding: 20px;
+    text-align: center;
+    color:#fff;
+}
+.banner{
+    min-height: 400px;
+    background-image: url('../imagenes/imagen.jpg');
+    background-position: center;
+}
+h1{
+    padding:150px;
+    color:#fff;
+    margin:0;
+    text-align: center;
+}
+section{
+    display:inline-block;
+    width: 30%;
+    
+    margin: 2% 0% 2% 2%;
+}
+.img {
+    width: 20%;
+    display: block;
+    margin:10px auto;
+}
+h3{
+    text-align: center;
+}
+p{
+    text-align: justify;
+}

@@ -1,0 +1,32 @@
+#           CONEXION N°1 A BD
+#            PYTHON - ORACLE 
+
+#    Datos para la BD de la Conexion N°1 
+#    de Python con BD Oracle 21c  o  11G
+
+http: https://visualstudio.microsoft.com/visual-cpp-build-tools/
+
+
+Ruta BD          = "C:/BDMartesTPOO/" 
+Tablespace (TBS) = BDMartesTOracle
+Usuario          = Usuario1MT
+Password         = "654321"
+
+Create Table AlumnosVM(
+Rut char(12) Constraint PkRutAlumnosVM Primary key,
+Nombre varchar(20) not null,
+Fono numeric(9),
+Direccion varchar(22),
+Ciudad varchar(18)
+);
+
+Begin 
+ Insert into AlumnosVM values('11.111.111-1','JPerez',223344,'Dir1','Santiago');
+ Insert into AlumnosVM values('22.222.222-2','Alumnos',889302,'Dir2','Viña');
+ Insert into AlumnosVM values('33.333.333-3','Msoto',732562,'Dir3','Santiago');
+ Insert into AlumnosVM values('44.444.444-4','JPino',901544,'Dir4','Valdivia');
+End;
+
+Select * From AlumnosLN;
+
+commit;

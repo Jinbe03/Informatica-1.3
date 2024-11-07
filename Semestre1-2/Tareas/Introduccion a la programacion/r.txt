@@ -1,0 +1,33 @@
+Realize un programa en python para el reparto de comida en delivery
+donde debe controlar el movimiento de alimento que piden los clientes
+
+datos a considerar.
+
+Rut, Nombre, Sanduich, bebida, valor sandwich, valor bebida, total, dcto.
+
+-0 clp a 9.999clp 0% dcto
+-Si la compra en total es mayor a 10.000 clp se hace un 10% de descuento
+-Si la compra sobre 30.000 clp tiene un 20% dcto.
+
+Importante
+-Debe ingresar los datos por teclado "print=(input())"
+-Se debe mostrar todos los datos ordenao
+
+
+Ej2
+
+Realize un programa en python para controlar los votos de las elecciones 
+del domingo 7 de mayo de 2023, para lo cual debes considerar los siguientes
+datos
+ 
+(del votante)
+Rut, Genero, Nombre, Hora de votacion, fecha, lugar de votacion.
+
+Importante
+-Se desea controlar que votantes van a sufragar despues  y antes del
+mediodia.
+-Debe entregar toda la informacion ordenada.
+-Si es despues del medio día se desea controlar los 3 rangos de edad 
+(18 a 20 - 21 a 64 - 65 en adelante)
+
+

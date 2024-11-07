@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Remuneraciones</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <div class="container">
+        <form action="Formulario2" id="Formulario2" method="get">
+            <h1>Formulario de Remuneraciones</h1>
+            <div class="form-group">
+                <label for="Rut">Rut:</label>
+                <input type="text" name="Rut" id="Rut" class="input-field">
+            </div>
+            <div class="form-group">
+                <label for="Nombre">Nombre:</label>
+                <input type="text" name="Nombre" id="Nombre" class="input-field">
+            </div>
+            <div class="form-group">
+                <label for="Sueldo Base">Sueldo Base:</label>
+                <input type="number" name="Sueldo Base" id="Sueldo Base" class="input-field">
+            </div>
+            <div class="form-group">
+                <label for="Genero">Género:</label>
+                <div class="gender-options">
+                    <label><input type="radio" name="genero" value="masculino">Masculino</label>
+                    <label><input type="radio" name="genero" value="femenino">Femenino</label>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="Numero de Cargas">Número de Cargas:</label>
+                <select name="Numero de Cargas" id="Numero de Cargas" class="input-field">
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="AFP">AFP:</label>
+                <select name="AFP" id="AFP" class="input-field">
+                    <option>A</option>
+                    <option>B</option>
+                    <option>C</option>
+                    <option>D</option>
+                    <option>E</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="Isapre">Isapre:</label>
+                <select name="Isapre" id="Isapre" class="input-field">
+                    <option>Mas Vida</option>
+                    <option>Menos Vida</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="Bono">Bono:</label>
+                <input type="number" name="Bono" id="Bono" class="input-field">
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Guardar" name="btnGuardar" id="btnGuardar" class="submit-button">
+            </div>
+        </form>
+    </div>
+</body>
+</html>

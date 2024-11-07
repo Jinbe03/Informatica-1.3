@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Formulario</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="css/estiloform.css">
+    </head>
+    <body>
+        <form id="form1" name="form1" method="get" onsubmit="return validaFormulario()">
+            <div>
+                <label class="label" for="usuario">Usuario</label>
+                <input type="text" id="usuario" name="usuario" onblur="validaUsuario()">
+            </div>
+            <div>
+                <label class="label" for="nombres">Nombres</label>
+                <input type="text" id="nombres" name="nombres">
+            </div>
+            <div>
+                <label class="label" for="edad">Edad</label>
+                <input type="text" id="edad" name="edad">
+            </div>
+            <div>
+                <label class="label" for="email">Email</label>
+                <input type="email" id="email" name="email" onblur="validaEmail()">
+            </div>
+            <div>
+                <label class="label" for="fecha">Fecha</label>
+                <input type="date" id="fecha" name="fecha">
+            </div>
+            <div>
+                <label class="label" for="comuna">Comuna</label>
+                <select id="comuna" name="comuna">
+                    <option value="">Seleccione</option>
+                    <option>San Joaquin</option>
+                    <option>La Florida</option>
+                    <option>Puente Alto</option>
+                    <option>Macul</option>
+                    <option>Ñuñoa</option>
+                </select>
+            </div>
+            <div>
+                <label class="label">GENERO:</label>
+                <input type="radio" id="masculino" name="genero" value="masculino">
+                <label class="masculino">Masculino</label>
+                <input type="radio" id="femenino" name="genero" value="femenino">
+                <label class="femenino">Femenino</label>
+            </div>
+            <div class="centro">
+                <input type="submit" id="btnEnviar" name="btnEnviar" value="Enviar">
+                <input type="reset" id="btnLimpiar" name="btnLimpiar" value="Limpiar">
+            </div>
+        </form>
+        <script src="js/validacion.js"></script>
+    </body>
+</html>

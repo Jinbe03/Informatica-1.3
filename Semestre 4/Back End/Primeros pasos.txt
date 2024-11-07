@@ -1,0 +1,33 @@
+PRIMEROS PASOS
+1- Configurar el entorno de trabajo:
+	- Instalar miniconda (python y sv)
+	- (recordar hacer click en el check del PATH)
+
+2- Configurar el VSCode:
+	- Instalar extensiones necesarias:
+		- material icon theme
+		- auto rename tags
+		- prettier
+
+3- Instalar django: (terminal: cmd)
+	- pip install django
+
+4- Crear proyecto: (terminal)
+	- django-admin startproject NOMBREPROYECTO
+
+5- Creamos nuestra propia app: (core o app)
+	- python manage.py startapp core
+
+6- Dentro de core crear carpetas: 
+	- templates/core (colocar los htmls)
+	- static/core (recursos staticos: img,css,js)
+
+7- Para iniciar el servidor:
+	- python manage.py runserver
+
+8- Configurar el settings:
+	- INSTALLED_APPS: 'core',
+
+9- Dentro de core crean: urls.py
+
+10- Conectar el urls del core con el url principal.

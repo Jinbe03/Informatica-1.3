@@ -1,0 +1,22 @@
+{% extends 'core/base.html' %}
+{% load static %}
+
+{% block titlepage %} Quienes Somos | Clase 4 {% endblock %}
+{% block titulo %} Agregar {% endblock %}
+
+{% block breadcrumb %} 
+    <li class="breadcrumb-item"><a href="#">Agregar</a></li>
+    <li class="breadcrumb-item active">Clase 4</li>     
+{% endblock %}
+
+{% block principal %}
+<form method="POST" enctype="multipart/form-data">
+    {% csrf_token %}
+    {{ form }}
+    <button type="submit" class="btn btn-primary">Modificar</button>
+</form>
+<a href="{% url 'empleados' %}" class="btn btn-secondary">Volver a la lista de empleados</a> <!-- Ajusta la URL según la vista de lista de empleados -->
+{{ msj }}
+
+
+{% endblock %}

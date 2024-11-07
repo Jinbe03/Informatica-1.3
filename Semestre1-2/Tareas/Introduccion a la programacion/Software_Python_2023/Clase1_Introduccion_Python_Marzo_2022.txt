@@ -1,0 +1,28 @@
+DATOS  DEL  PROFESOR
+
+NOMBRE     : Cesar Arce J.
+Mail       : cesar.arce@inacapmail.cl
+Asignatura : Introducción a la Programación
+Sección    : 114-D
+Tipo Asig. : Practica
+Asistencia : ?? ( 50% )
+Examen     : ??  Si
+Aprobada   : - Si Prom >= 39.5, "Aprobada"; "Reprobada"   
+
+                             NOTAS
+           Nota1       Nota2       Nota3     Nota4
+            15%         20%         35%       30%
+
+Software:
+Para Diagramas de Flujo
+-StartUml  = Diagramador para los DFD ( Diagramas de Flujo de Datos ).
+-visio     = Diagramador para los DFD ( Diagramas de Flujo de Datos ).             
+-Draw.io   = Diagramador para los DFD ( Diagramas de Flujo de Datos ).
+-etc 
+
+                  
+-Python    = Software para la parte programación.
+             3.9.1   o   3.9  ->    
+           
+-VsCode    = Editor de programación con entorno grafico.
+             Editor para programar en python con entorno grafico.          

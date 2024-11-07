@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+    <body>
+        <form name="frmEjemplo" id="frmEjemplo" method="get" action="">
+            <div>
+                <label for="Nombre">Nombre</label>
+                <input type="text" name="Nombre" id="Nombre">
+            </div>
+            <div>
+                <label for="Apellido">Apellido</label>
+                <input type="text" name="Apellido" id="Apellido">
+            </div>
+            <div>
+                <label for="clave">Clave</label>
+                <input type="password" name="clave" id="clave"> 
+            </div>
+            <div>
+                <label for="correo">Correo</label>
+                <input type="email" name="correo" id="correo">
+            </div>
+            <div>
+                <label for="Fecha">Fecha</label>
+                <input type="date" name="Fecha" id="Fecha">
+            </div>
+            <div>
+                <label for="">Observaciones</label>
+                <textarea name="" id="" cols="30" rows="10"></textarea>
+            </div>
+            <div>
+                <label for="comuna">Comuna</label>
+                <select name="comuna" id="coumuna">
+                    <option>Seleccione</option>
+                    <option>Macul</option>
+                    <option>Ñuñoa</option>
+                    <option>La Florida</option>
+                    <option>San Joaquin</option>
+                    <option>Puente Alto</option>
+                
+                    
+                </select>
+            </div>
+            <div>
+                <input type="submit" value="ENVIAR" name="btnEnviar" id="btnEnviar">
+                <input type="reset" value="LIMPIAR" name="btnLimpiar" id="btnLimpiar">
+            </div>
+        </form>
+        
+    </body>
+
+</html>

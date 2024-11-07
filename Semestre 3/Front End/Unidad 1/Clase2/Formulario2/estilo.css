@@ -1,0 +1,19 @@
+#frmRemuneraciones {
+    border: 1px solid black;
+    width: 450px;
+    border-radius: 20px 0px;
+    padding: 20px;
+}
+form div {
+    margin:15px;
+}
+
+.label{
+    display:inline-block;
+    width: 180px;
+    text-align: right;
+    margin-right: 10px;
+}
+.centro{
+    text-align: center;
+}
